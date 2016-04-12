@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Numbers Game</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+	<style>
+		button {
+			width: 100%;
+		}
+		
+		.main {
+			text-align: center;
+		}
+		
+		#number {
+			font-size: 200px;
+		}
+		
+		#number2 {
+			font-size: 200px;
+		}
+		
+		#outcome {
+			min-height: 90px;
+		}
+		
+		.computer {
+			min-height: 230px;
+		}
+		
+		#userInput {
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 main">
+				<h1>The Insulting Random<br> Number Guessing Game</h1>
+				<h3>Guess a Number Between 1 and 10</h3>
+				<hr>
+				<div class="col-xs-6">
+					<h3>Your Guess</h3>
+						<p id="number">
+						<input type="text" id="userInput">
+						</p>
+				</div>
+				<div class="col-xs-6">
+				<h3>Computer's Selection</h3>
+					<div class="computerOutput">
+						<p id="number2">
+						
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 main">
+				<h1 id="outcome"></h1>
+				
+
+
+				<button id="button" class="btn btn-default btn-lg green">Play Game</button>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
