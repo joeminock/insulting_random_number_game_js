@@ -15,12 +15,12 @@ function guess() {
 		hah();
 		setTimeout(clear,3000)
 	} else if (rand == userInput.value) {
-		console.log("Holy Crap, You Guessed it Right!!!");
-		document.getElementById("outcome").innerHTML = "Holy Crap, You Guessed it Right!!!";
+		document.getElementById("outcome").innerHTML = "Holy Crap, You Guessed it Right!!! Like that'll ever happen again.";
 		hah();
 		setTimeout(clear,4000)
 	} else {
-		console.log("WTF dummy, that's not a number");
+		document.getElementById("outcome").innerHTML = "That's not a freaking number, WTF! You do know what a number is, right?";
+		hah();
 		setTimeout(clear,3000);
 		
 	}
